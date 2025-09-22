@@ -62,6 +62,11 @@ ament_target_dependencies(sllidar_client
 ################################################################################
 # Install
 ################################################################################
+install(
+  DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(DIRECTORY launch rviz
   DESTINATION share/${PROJECT_NAME}
 )
